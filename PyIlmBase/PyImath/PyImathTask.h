@@ -36,7 +36,11 @@
 #define _PyImathTask_h_
 
 #include <PyImathExport.h>
+#ifdef _WIN32
+#include <io.h>
+#else
 #include <unistd.h>
+#endif
 
 namespace PyImath {
 
